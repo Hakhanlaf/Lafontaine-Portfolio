@@ -3,7 +3,7 @@ window.PORTFOLIO = {
   "name": "Adrien Lafontaine",
   "email": "adrienlafontaine23@gmail.com",
   "linkedin": "",
-  "cv": "",
+  "cv": "assets/cv-adrien-lafontaine.pdf",
   "about": "Je travaille sur des supports de communication et des jeux vidéo. Mes contributions couvrent la collecte d’informations, la mise en page, l’illustration, la rédaction, la narration, le game design et la programmation.",
   "projects": [
     {

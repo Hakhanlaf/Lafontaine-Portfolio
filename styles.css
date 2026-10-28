@@ -14,3 +14,5 @@
 .project-card[data-category="edition"] .project-visual img{object-fit:contain}.project-gallery figcaption{margin-top:10px}
 .project-role-preview{font-size:13px;line-height:1.6;margin:0 0 22px;max-width:380px}.project-role-preview strong{color:var(--blue);font-weight:700}.project-role{border-top:3px solid var(--orange);padding-top:18px}
 .about h2 em{font-size:.8em}
+
+.cv-download{display:inline-flex;align-items:center;gap:26px;background:var(--paper);color:var(--blue);border:0;padding:14px 20px;font-weight:700}.cv-download span{font:10px var(--mono)}.cv-download:hover{background:var(--orange);color:var(--ink)}@media(max-width:480px){.cv-download{gap:18px;font-size:13px}}
