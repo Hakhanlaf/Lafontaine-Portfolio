@@ -65,7 +65,7 @@
     heading.append(title, el('span', '', project.label));
     const copy = el('div', 'project-copy');
     copy.append(heading, el('p', 'project-intro', project.intro));
-    const details = el('details'); const summary = el('summary', '', 'Ouvrir le dossier');
+    const details = el('details'); const summary = el('summary', '', 'Voir les détails');
     const detailBody = el('div', 'project-detail');
     let filled = 0;
     fields.forEach(([key, label]) => {
