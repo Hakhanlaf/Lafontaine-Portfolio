@@ -43,11 +43,16 @@
   data.projects.forEach((project, index) => {
     const card = el('article', 'project-card');
     card.dataset.category = project.category;
+    const number = el('span', 'project-number', String(index + 1).padStart(2, '0'));
+    number.setAttribute('aria-hidden', 'true');
+    card.append(number);
     const visual = el('div', 'project-visual');
     const image = safeUrl(project.image);
     const placeholder = () => {
       const block = el('div', 'placeholder');
-      block.append(el('b', '', String(index + 1).padStart(2, '0')), el('span', '', project.label), el('small', '', 'Visuel à ajouter'));
+      const mark = el('b', '', ['Aa', '×', '▶', '+'][index % 4]);
+      mark.setAttribute('aria-hidden', 'true');
+      block.append(mark, el('span', '', project.label), el('small', '', 'Visuels à venir'));
       visual.replaceChildren(block);
     };
     if (image) {
@@ -58,8 +63,9 @@
     const title = el('h3', '', project.title); title.id = `project-${index}`;
     card.setAttribute('aria-labelledby', title.id);
     heading.append(title, el('span', '', project.label));
-    card.append(visual, heading, el('p', '', project.intro));
-    const details = el('details'); const summary = el('summary', '', 'Voir la fiche projet');
+    const copy = el('div', 'project-copy');
+    copy.append(heading, el('p', 'project-intro', project.intro));
+    const details = el('details'); const summary = el('summary', '', 'Ouvrir le dossier');
     const detailBody = el('div', 'project-detail');
     let filled = 0;
     fields.forEach(([key, label]) => {
@@ -69,7 +75,7 @@
     if (!filled) { detailBody.append(el('p', 'muted', 'Fiche à compléter : contexte, objectif, rôle personnel, démarche, outils et livrables.')); incomplete = true; }
     const url = safeUrl(project.link);
     if (url) { const link = el('a', '', `${project.linkLabel || 'Voir le projet'} ↗`); link.href = url; detailBody.append(link); }
-    details.append(summary, detailBody); card.append(details); grid.append(card);
+    details.append(summary, detailBody); copy.append(details); card.append(visual, copy); grid.append(card);
   });
   document.querySelector('#draft-note').hidden = !incomplete;
   document.querySelectorAll('[data-filter]').forEach(button => {

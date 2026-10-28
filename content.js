@@ -1,7 +1,7 @@
 /* Modifiez ce fichier avec vos informations vérifiées. Une chaîne vide masque
    automatiquement les coordonnées et liens qui ne sont pas encore renseignés. */
 window.PORTFOLIO = {
-  name: "", // Votre prénom et nom ; vide = « Portfolio ».
+  name: "Adrien Lafontaine", // Identité indiquée dans le README du dépôt.
   email: "",
   linkedin: "", // URL https:// complète.
   cv: "", // Exemple après ajout du fichier : assets/cv.pdf
