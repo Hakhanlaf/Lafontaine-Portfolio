@@ -1,10 +1,10 @@
-/* Sources publiques et contributions personnelles précisées par Adrien le 28 octobre 2026. */
+/* Informations et contributions confirmées par Adrien. Sources : SOURCES-ITCH.md et SOURCES-LIVRET.md. */
 window.PORTFOLIO = {
   "name": "Adrien Lafontaine",
-  "email": "",
+  "email": "adrienlafontaine23@gmail.com",
   "linkedin": "",
   "cv": "",
-  "about": "",
+  "about": "Je travaille sur des supports de communication et des jeux vidéo. Mes contributions couvrent la collecte d’informations, la mise en page, l’illustration, la rédaction, la narration, le game design et la programmation.",
   "projects": [
     {
       "id": "livret",
@@ -20,7 +20,7 @@ window.PORTFOLIO = {
       "tools": "",
       "result": "Livret d’accueil de 34 pages, édition 2024–2025.",
       "link": "assets/livret/livret-accueil-doctorants-2024-2025.pdf",
-      "linkLabel": "Ouvrir le PDF local · 15,8 Mo",
+      "linkLabel": "Consulter le livret · PDF · 15,8 Mo",
       "presentation": "projets/livret-accueil.html"
     },
     {

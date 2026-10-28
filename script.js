@@ -18,11 +18,10 @@
   };
   if (data.name.trim()) {
     document.querySelectorAll('[data-name]').forEach(n => { n.textContent = data.name; });
-    document.title = `${data.name} — Communication & graphisme`;
+    document.title = `${data.name} — Communication & game design`;
   }
   if (data.about.trim()) {
     document.querySelector('#about-text').textContent = data.about;
-    document.querySelector('#about-placeholder').hidden = true;
   }
   const cv = safeUrl(data.cv);
   if (cv) {
@@ -31,15 +30,14 @@
     link.hidden = false;
   }
   const contacts = document.querySelector('#contact-links');
+  contacts.replaceChildren();
   const addContact = (label, href) => {
-    if (contacts.querySelector('p')) contacts.replaceChildren();
     const link = el('a', '', label); link.href = href; contacts.append(link);
   };
   if (/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(data.email)) addContact(data.email, `mailto:${data.email}`);
   if (/^https:\/\//i.test(data.linkedin) && safeUrl(data.linkedin)) addContact('LinkedIn ↗', data.linkedin);
   const grid = document.querySelector('#project-grid');
   const fields = [['role', 'Mon rôle'], ['context', 'Contexte'], ['approach', 'Fonctionnement'], ['tools', 'Outils'], ['result', 'Livrable / résultat'], ['credits', 'Crédits']];
-  let incomplete = false;
   data.projects.forEach((project, index) => {
     const card = el('article', 'project-card');
     card.dataset.category = project.category;
@@ -50,17 +48,10 @@
     card.append(number);
     const visual = el('div', 'project-visual');
     const image = safeUrl(project.image);
-    const placeholder = () => {
-      const block = el('div', 'placeholder');
-      const mark = el('b', '', ['Aa', '×', '▶', '+'][index % 4]);
-      mark.setAttribute('aria-hidden', 'true');
-      block.append(mark, el('span', '', project.label), el('small', '', 'Visuels à venir'));
-      visual.replaceChildren(block);
-    };
     if (image) {
       const img = el('img'); img.src = image; img.alt = project.alt || project.title; img.loading = 'lazy';
-      img.addEventListener('error', placeholder, { once: true }); visual.append(img);
-    } else { placeholder(); incomplete = true; }
+      img.addEventListener('error', () => { visual.hidden = true; }, { once: true }); visual.append(img);
+    } else { visual.hidden = true; }
     const heading = el('div', 'project-heading');
     const title = el('h3', '', project.title); title.id = `project-${index}`;
     card.setAttribute('aria-labelledby', title.id);
@@ -74,13 +65,11 @@
     }
     const details = el('details'); const summary = el('summary', '', 'Voir les détails');
     const detailBody = el('div', 'project-detail');
-    let filled = 0;
     fields.forEach(([key, label]) => {
       if (!project[key]?.trim()) return;
-      const p = el('p'); p.append(el('strong', '', `${label} — `), document.createTextNode(project[key])); detailBody.append(p); filled++;
+      const fieldLabel = key === 'approach' && project.category === 'edition' ? 'Contenu' : label;
+      const p = el('p'); p.append(el('strong', '', `${fieldLabel} — `), document.createTextNode(project[key])); detailBody.append(p);
     });
-    if (!filled) { detailBody.append(el('p', 'muted', 'Fiche à compléter : contexte, objectif, rôle personnel, démarche, outils et livrables.')); incomplete = true; }
-    if (project.credits && !project.role) detailBody.append(el('p', 'muted', 'Hakhan_laf figure parmi les auteurs. Le détail de ma contribution sera ajouté à cette fiche.'));
     (project.presentation ? [] : project.gallery || []).forEach(shot => {
       const src = safeUrl(shot.image);
       if (!src) return;
@@ -101,7 +90,6 @@
     card.append(visual.parentElement?.tagName === 'A' ? visual.parentElement : visual, copy); grid.append(card);
 
   });
-  document.querySelector('#draft-note').hidden = !incomplete;
   document.querySelectorAll('[data-filter]').forEach(button => {
     button.hidden = button.dataset.filter !== 'all' && !data.projects.some(project => project.category === button.dataset.filter);
     button.addEventListener('click', () => {
