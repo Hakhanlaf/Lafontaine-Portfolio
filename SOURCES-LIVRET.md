@@ -9,3 +9,7 @@ Les commandes de téléchargement et d’impression étant désactivées, la cop
 Contrôles : nombre et format des pages, planche de contrôle des 34 rendus, rendu de contrôle du PDF après assemblage. Les extraits du portfolio correspondent à la couverture et aux pages 3, 15 et 29.
 
 Aucun logiciel utilisé pour créer le livret ni détail du rôle personnel n’a été supposé. À compléter avec Adrien.
+
+## Contributions confirmées par Adrien — 28 octobre 2026
+
+Collecte d’informations, mise en page et illustrations. Aucun travail de rédaction du livret n’est revendiqué.

@@ -13,3 +13,7 @@ Chaque jeu possède une page HTML locale dans projets/. Les descriptions sont re
 Aucun jeu, lecteur externe ni module de téléchargement n’est embarqué. Les boutons ouvrent les pages itch.io dans un nouvel onglet. Les captures sont hébergées avec le portfolio.
 
 Les résumés des cartes se modifient dans content.js. Les pages détaillées sont les fichiers HTML de projets/ ; les modifier également si les informations changent. Aucune synchronisation automatique n’est configurée.
+
+## Contributions confirmées par Adrien — 28 octobre 2026
+
+Shadow Project.exe : rédaction et narration. Dig! Dig!! Dig!!! : game design et programmation. Bloody Mary : concept, game design et programmation. Jiangshi Tactics : concept, game design et programmation. Les crédits collectifs restent inchangés.

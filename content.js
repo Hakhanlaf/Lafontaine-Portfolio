@@ -1,4 +1,4 @@
-/* Sources : SOURCES-ITCH.md et SOURCES-LIVRET.md. */
+/* Sources publiques et contributions personnelles précisées par Adrien le 28 octobre 2026. */
 window.PORTFOLIO = {
   "name": "Adrien Lafontaine",
   "email": "",
@@ -15,49 +15,17 @@ window.PORTFOLIO = {
       "image": "assets/livret/couverture.webp",
       "alt": "Couverture du livret d’accueil des doctorants du LEM3, édition 2024–2025",
       "context": "Livret du Laboratoire d’étude des microstructures et de mécanique des matériaux (LEM3), édition 2024–2025.",
-      "role": "",
+      "role": "Collecte d’informations, mise en page et illustrations.",
       "approach": "Présentation du laboratoire, arrivée des doctorants, activité de recherche et informations pratiques.",
       "tools": "",
-      "result": "34 pages. Copie PDF locale reconstituée à partir de la publication Calaméo.",
+      "result": "Livret d’accueil de 34 pages, édition 2024–2025.",
       "link": "assets/livret/livret-accueil-doctorants-2024-2025.pdf",
       "linkLabel": "Ouvrir le PDF local · 15,8 Mo",
       "presentation": "projets/livret-accueil.html"
     },
     {
-      "id": "graphisme",
-      "category": "graphisme",
-      "label": "Graphisme",
-      "title": "Créations graphiques",
-      "intro": "Un espace pour réunir une sélection de créations et expliquer leur intention.",
-      "image": "",
-      "alt": "",
-      "context": "",
-      "role": "",
-      "approach": "",
-      "tools": "",
-      "result": "",
-      "link": "",
-      "linkLabel": "Voir la sélection"
-    },
-    {
-      "id": "audiovisuel",
-      "category": "video",
-      "label": "Audiovisuel",
-      "title": "Réalisations audiovisuelles",
-      "intro": "Un espace pour présenter les vidéos, leur contexte et la contribution apportée.",
-      "image": "",
-      "alt": "",
-      "context": "",
-      "role": "",
-      "approach": "",
-      "tools": "",
-      "result": "",
-      "link": "",
-      "linkLabel": "Voir la réalisation"
-    },
-    {
       "category": "jeu",
-      "label": "Game design · Navigateur",
+      "label": "Narration · Navigateur",
       "alt": "Visuel du jeu Shadow Project.exe sur itch.io",
       "result": "",
       "link": "https://timoyo.itch.io/shadow-exe",
@@ -73,7 +41,8 @@ window.PORTFOLIO = {
       "image": "assets/games/shadow-exe.png",
       "gallery": [],
       "platform": "Navigateur",
-      "presentation": "projets/shadow-exe.html"
+      "presentation": "projets/shadow-exe.html",
+      "role": "Rédaction et narration."
     },
     {
       "category": "jeu",
@@ -99,7 +68,8 @@ window.PORTFOLIO = {
         }
       ],
       "platform": "Navigateur",
-      "presentation": "projets/dig-dig-dig.html"
+      "presentation": "projets/dig-dig-dig.html",
+      "role": "Game design et programmation."
     },
     {
       "category": "jeu",
@@ -129,7 +99,8 @@ window.PORTFOLIO = {
         }
       ],
       "platform": "Navigateur",
-      "presentation": "projets/bloody-mary.html"
+      "presentation": "projets/bloody-mary.html",
+      "role": "Concept, game design et programmation."
     },
     {
       "category": "jeu",
@@ -143,7 +114,7 @@ window.PORTFOLIO = {
       "page": "https://go-for-rune.itch.io/jiangshi-tactics",
       "intro": "Un jeu tactique au tour par tour : un moine pacifiste doit se défendre en déplaçant ses ennemis pour qu’ils s’attaquent entre eux.",
       "context": "Premier prototype du collectif Go For Rune. Version Windows.",
-      "role": "Game design et programmation en équipe ; crédité sous le nom « Adrien L ».",
+      "role": "Concept, game design et programmation.",
       "approach": "Combattre sans attaquer directement : se défendre et modifier la position des ennemis sur le terrain.",
       "credits": "Game design : Adrien L, Timéo D, Félix W et Nino B. Programmation : Adrien L et Timéo D. Level design et scénario : Félix W. Art : Nino B.",
       "controls": "Version Windows à télécharger. Ce projet ne possède pas de version navigateur sur sa page itch.io.",

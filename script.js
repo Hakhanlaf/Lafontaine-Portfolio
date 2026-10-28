@@ -38,7 +38,7 @@
   if (/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(data.email)) addContact(data.email, `mailto:${data.email}`);
   if (/^https:\/\//i.test(data.linkedin) && safeUrl(data.linkedin)) addContact('LinkedIn ↗', data.linkedin);
   const grid = document.querySelector('#project-grid');
-  const fields = [['context', 'Contexte'], ['role', 'Mon rôle'], ['approach', 'Fonctionnement'], ['tools', 'Outils'], ['result', 'Livrable / résultat'], ['credits', 'Crédits']];
+  const fields = [['role', 'Mon rôle'], ['context', 'Contexte'], ['approach', 'Fonctionnement'], ['tools', 'Outils'], ['result', 'Livrable / résultat'], ['credits', 'Crédits']];
   let incomplete = false;
   data.projects.forEach((project, index) => {
     const card = el('article', 'project-card');
@@ -67,6 +67,11 @@
     heading.append(title, el('span', '', project.label));
     const copy = el('div', 'project-copy');
     copy.append(heading, el('p', 'project-intro', project.intro));
+    if (project.role?.trim()) {
+      const role = el('p', 'project-role-preview');
+      role.append(el('strong', '', 'Mon rôle — '), document.createTextNode(project.role));
+      copy.append(role);
+    }
     const details = el('details'); const summary = el('summary', '', 'Voir les détails');
     const detailBody = el('div', 'project-detail');
     let filled = 0;
@@ -98,6 +103,7 @@
   });
   document.querySelector('#draft-note').hidden = !incomplete;
   document.querySelectorAll('[data-filter]').forEach(button => {
+    button.hidden = button.dataset.filter !== 'all' && !data.projects.some(project => project.category === button.dataset.filter);
     button.addEventListener('click', () => {
       document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
       let count = 0;
