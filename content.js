@@ -1,4 +1,4 @@
-/* Contenus des jeux repris des pages itch.io publiques ; voir SOURCES-ITCH.md. */
+/* Jeux : sources publiques itch.io, voir SOURCES-ITCH.md. */
 window.PORTFOLIO = {
   "name": "Adrien Lafontaine",
   "email": "",
@@ -68,15 +68,11 @@ window.PORTFOLIO = {
       "context": "Prototype de puzzle réalisé en équipe avec Unity.",
       "tools": "Unity",
       "credits": "Timoyo, nobu0xx, Velwald, Matti Dupont, Heeko20, Hakhan_laf, KinysNB et Tato.",
-      "embed": {
-        "type": "play",
-        "upload": 16282080,
-        "width": 960,
-        "height": 600
-      },
       "controls": "Version navigateur. Clavier et souris recommandés.",
       "image": "assets/games/shadow-exe.png",
-      "gallery": []
+      "gallery": [],
+      "platform": "Navigateur",
+      "presentation": "projets/shadow-exe.html"
     },
     {
       "category": "jeu",
@@ -93,12 +89,6 @@ window.PORTFOLIO = {
       "approach": "Une prise de risque autour du choix entre continuer à creuser et sécuriser les diamants récoltés.",
       "tools": "Unity",
       "credits": "Go For Rune, Timoyo, Velwald, Hakhan_laf, gouaine et KinysNB.",
-      "embed": {
-        "type": "play",
-        "upload": 15352475,
-        "width": 1280,
-        "height": 720
-      },
       "controls": "Joueur 1 : flèches gauche/droite pour creuser, bas pour sortir. Joueur 2 : A/D pour creuser, S pour sortir.",
       "image": "assets/games/dig-dig-dig-1.png",
       "gallery": [
@@ -106,7 +96,9 @@ window.PORTFOLIO = {
           "image": "assets/games/dig-dig-dig-1.png",
           "alt": "Capture du jeu Dig! Dig!! Dig!!! publiée sur itch.io"
         }
-      ]
+      ],
+      "platform": "Navigateur",
+      "presentation": "projets/dig-dig-dig.html"
     },
     {
       "category": "jeu",
@@ -123,12 +115,6 @@ window.PORTFOLIO = {
       "approach": "Deux phases : prélever du sang en maintenant le curseur dans une zone, puis doser les ingrédients des cocktails au bar.",
       "tools": "Unity",
       "credits": "Go For Rune, KinysNB, Velwald et Hakhan_laf.",
-      "embed": {
-        "type": "play",
-        "upload": 14445559,
-        "width": 1000,
-        "height": 600
-      },
       "controls": "Prélèvement : souris puis A/D, Q/D ou flèches gauche/droite. Bar : flèches gauche/droite pour choisir, espace pour verser.",
       "image": "assets/games/bloody-mary-1.png",
       "gallery": [
@@ -140,7 +126,9 @@ window.PORTFOLIO = {
           "image": "assets/games/bloody-mary-2.png",
           "alt": "Capture du jeu Bloody Mary publiée sur itch.io"
         }
-      ]
+      ],
+      "platform": "Navigateur",
+      "presentation": "projets/bloody-mary.html"
     },
     {
       "category": "jeu",
@@ -157,13 +145,11 @@ window.PORTFOLIO = {
       "role": "Game design et programmation en équipe ; crédité sous le nom « Adrien L ».",
       "approach": "Combattre sans attaquer directement : se défendre et modifier la position des ennemis sur le terrain.",
       "credits": "Game design : Adrien L, Timéo D, Félix W et Nino B. Programmation : Adrien L et Timéo D. Level design et scénario : Félix W. Art : Nino B.",
-      "embed": {
-        "type": "download",
-        "game": 3632871
-      },
       "controls": "Version Windows à télécharger. Ce projet ne possède pas de version navigateur sur sa page itch.io.",
       "image": "assets/games/jiangshi-tactics.png",
-      "gallery": []
+      "gallery": [],
+      "platform": "Windows",
+      "presentation": "projets/jiangshi-tactics.html"
     }
   ]
 };
