@@ -1,4 +1,4 @@
-/* Jeux : sources publiques itch.io, voir SOURCES-ITCH.md. */
+/* Sources : SOURCES-ITCH.md et SOURCES-LIVRET.md. */
 window.PORTFOLIO = {
   "name": "Adrien Lafontaine",
   "email": "",
@@ -10,17 +10,18 @@ window.PORTFOLIO = {
       "id": "livret",
       "category": "edition",
       "label": "Édition",
-      "title": "Livret d’accueil",
-      "intro": "Un support à présenter à travers sa structure, sa mise en page et ses choix graphiques.",
-      "image": "",
-      "alt": "",
-      "context": "",
+      "title": "Livret d’accueil des doctorants",
+      "intro": "Livret d’accueil du LEM3, édition 2024–2025. Un document de 34 pages destiné aux doctorants.",
+      "image": "assets/livret/couverture.webp",
+      "alt": "Couverture du livret d’accueil des doctorants du LEM3, édition 2024–2025",
+      "context": "Livret du Laboratoire d’étude des microstructures et de mécanique des matériaux (LEM3), édition 2024–2025.",
       "role": "",
-      "approach": "",
+      "approach": "Présentation du laboratoire, arrivée des doctorants, activité de recherche et informations pratiques.",
       "tools": "",
-      "result": "",
-      "link": "",
-      "linkLabel": "Consulter le livret"
+      "result": "34 pages. Copie PDF locale reconstituée à partir de la publication Calaméo.",
+      "link": "assets/livret/livret-accueil-doctorants-2024-2025.pdf",
+      "linkLabel": "Ouvrir le PDF local · 15,8 Mo",
+      "presentation": "projets/livret-accueil.html"
     },
     {
       "id": "graphisme",
