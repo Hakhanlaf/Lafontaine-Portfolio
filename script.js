@@ -115,8 +115,8 @@
         frame.referrerPolicy = 'strict-origin-when-cross-origin';
         frame.allow = 'autoplay; fullscreen; gamepad'; frame.allowFullscreen = true;
         if (isGame) {
-          frame.src = `https://html-classic.itch.zone/html/${embed.upload}/index.html`;
-          const width = embed.width || 1280, height = embed.height || 720;
+          frame.src = `https://itch.io/embed-upload/${embed.upload}?color=20211e`;
+          const width = embed.width || 1280, height = (embed.height || 720) + 35;
           stage.style.aspectRatio = `${width} / ${height}`;
           frame.width = width; frame.height = height;
           const resize = () => {
