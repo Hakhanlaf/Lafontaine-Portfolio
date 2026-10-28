@@ -1,15 +1,169 @@
-/* Modifiez ce fichier avec vos informations vérifiées. Une chaîne vide masque
-   automatiquement les coordonnées et liens qui ne sont pas encore renseignés. */
+/* Contenus des jeux repris des pages itch.io publiques ; voir SOURCES-ITCH.md. */
 window.PORTFOLIO = {
-  name: "Adrien Lafontaine", // Identité indiquée dans le README du dépôt.
-  email: "",
-  linkedin: "", // URL https:// complète.
-  cv: "", // Exemple après ajout du fichier : assets/cv.pdf
-  about: "", // Vide = présentation fondée sur les seuls éléments fournis.
-  projects: [
-    { id: "livret", category: "edition", label: "Édition", title: "Livret d’accueil", intro: "Un support à présenter à travers sa structure, sa mise en page et ses choix graphiques.", image: "", alt: "", context: "", role: "", approach: "", tools: "", result: "", link: "", linkLabel: "Consulter le livret" },
-    { id: "graphisme", category: "graphisme", label: "Graphisme", title: "Créations graphiques", intro: "Un espace pour réunir une sélection de créations et expliquer leur intention.", image: "", alt: "", context: "", role: "", approach: "", tools: "", result: "", link: "", linkLabel: "Voir la sélection" },
-    { id: "audiovisuel", category: "video", label: "Audiovisuel", title: "Réalisations audiovisuelles", intro: "Un espace pour présenter les vidéos, leur contexte et la contribution apportée.", image: "", alt: "", context: "", role: "", approach: "", tools: "", result: "", link: "", linkLabel: "Voir la réalisation" },
-    { id: "jeux", category: "jeu", label: "Jeux vidéo", title: "Projets de jeux vidéo", intro: "Un espace pour montrer les projets, leurs éléments visuels et le rôle tenu dans leur création.", image: "", alt: "", context: "", role: "", approach: "", tools: "", result: "", link: "", linkLabel: "Découvrir le projet" }
+  "name": "Adrien Lafontaine",
+  "email": "",
+  "linkedin": "",
+  "cv": "",
+  "about": "",
+  "projects": [
+    {
+      "id": "livret",
+      "category": "edition",
+      "label": "Édition",
+      "title": "Livret d’accueil",
+      "intro": "Un support à présenter à travers sa structure, sa mise en page et ses choix graphiques.",
+      "image": "",
+      "alt": "",
+      "context": "",
+      "role": "",
+      "approach": "",
+      "tools": "",
+      "result": "",
+      "link": "",
+      "linkLabel": "Consulter le livret"
+    },
+    {
+      "id": "graphisme",
+      "category": "graphisme",
+      "label": "Graphisme",
+      "title": "Créations graphiques",
+      "intro": "Un espace pour réunir une sélection de créations et expliquer leur intention.",
+      "image": "",
+      "alt": "",
+      "context": "",
+      "role": "",
+      "approach": "",
+      "tools": "",
+      "result": "",
+      "link": "",
+      "linkLabel": "Voir la sélection"
+    },
+    {
+      "id": "audiovisuel",
+      "category": "video",
+      "label": "Audiovisuel",
+      "title": "Réalisations audiovisuelles",
+      "intro": "Un espace pour présenter les vidéos, leur contexte et la contribution apportée.",
+      "image": "",
+      "alt": "",
+      "context": "",
+      "role": "",
+      "approach": "",
+      "tools": "",
+      "result": "",
+      "link": "",
+      "linkLabel": "Voir la réalisation"
+    },
+    {
+      "category": "jeu",
+      "label": "Game design · Navigateur",
+      "alt": "Visuel du jeu Shadow Project.exe sur itch.io",
+      "result": "",
+      "link": "https://timoyo.itch.io/shadow-exe",
+      "linkLabel": "Page et crédits sur itch.io",
+      "id": "shadow-exe",
+      "title": "Shadow Project.exe",
+      "page": "https://timoyo.itch.io/shadow-exe",
+      "intro": "Un jeu de puzzle en 2D : incarner S.A.M.I. et sortir du laboratoire où le personnage est enfermé.",
+      "context": "Prototype de puzzle réalisé en équipe avec Unity.",
+      "tools": "Unity",
+      "credits": "Timoyo, nobu0xx, Velwald, Matti Dupont, Heeko20, Hakhan_laf, KinysNB et Tato.",
+      "embed": {
+        "type": "play",
+        "upload": 16282080,
+        "width": 960,
+        "height": 600
+      },
+      "controls": "Version navigateur. Clavier et souris recommandés.",
+      "image": "assets/games/shadow-exe.png",
+      "gallery": []
+    },
+    {
+      "category": "jeu",
+      "label": "Game design · Navigateur",
+      "alt": "Visuel du jeu Dig! Dig!! Dig!!! sur itch.io",
+      "result": "",
+      "link": "https://go-for-rune.itch.io/dig-dig-dig",
+      "linkLabel": "Page et crédits sur itch.io",
+      "id": "dig-dig-dig",
+      "title": "Dig! Dig!! Dig!!!",
+      "page": "https://go-for-rune.itch.io/dig-dig-dig",
+      "intro": "Deux joueurs creusent pour récolter des diamants. Continuer à miner augmente le risque d’éboulement ; sortir permet de mettre ses gains à l’abri.",
+      "context": "Jeu d’action à deux joueurs sur le même clavier, publié par Go For Rune.",
+      "approach": "Une prise de risque autour du choix entre continuer à creuser et sécuriser les diamants récoltés.",
+      "tools": "Unity",
+      "credits": "Go For Rune, Timoyo, Velwald, Hakhan_laf, gouaine et KinysNB.",
+      "embed": {
+        "type": "play",
+        "upload": 15352475,
+        "width": 1280,
+        "height": 720
+      },
+      "controls": "Joueur 1 : flèches gauche/droite pour creuser, bas pour sortir. Joueur 2 : A/D pour creuser, S pour sortir.",
+      "image": "assets/games/dig-dig-dig-1.png",
+      "gallery": [
+        {
+          "image": "assets/games/dig-dig-dig-1.png",
+          "alt": "Capture du jeu Dig! Dig!! Dig!!! publiée sur itch.io"
+        }
+      ]
+    },
+    {
+      "category": "jeu",
+      "label": "Game design · Navigateur",
+      "alt": "Visuel du jeu Bloody Mary sur itch.io",
+      "result": "",
+      "link": "https://go-for-rune.itch.io/bloody-mary",
+      "linkLabel": "Page et crédits sur itch.io",
+      "id": "bloody-mary",
+      "title": "Bloody Mary",
+      "page": "https://go-for-rune.itch.io/bloody-mary",
+      "intro": "Un vampire barman prépare ses réserves de sang le jour, puis sert des cocktails à ses clients la nuit.",
+      "context": "Jeu réalisé pour la BBQ Game Jam 2025 sur le thème « Until the last drop ».",
+      "approach": "Deux phases : prélever du sang en maintenant le curseur dans une zone, puis doser les ingrédients des cocktails au bar.",
+      "tools": "Unity",
+      "credits": "Go For Rune, KinysNB, Velwald et Hakhan_laf.",
+      "embed": {
+        "type": "play",
+        "upload": 14445559,
+        "width": 1000,
+        "height": 600
+      },
+      "controls": "Prélèvement : souris puis A/D, Q/D ou flèches gauche/droite. Bar : flèches gauche/droite pour choisir, espace pour verser.",
+      "image": "assets/games/bloody-mary-1.png",
+      "gallery": [
+        {
+          "image": "assets/games/bloody-mary-1.png",
+          "alt": "Capture du jeu Bloody Mary publiée sur itch.io"
+        },
+        {
+          "image": "assets/games/bloody-mary-2.png",
+          "alt": "Capture du jeu Bloody Mary publiée sur itch.io"
+        }
+      ]
+    },
+    {
+      "category": "jeu",
+      "label": "Game design · Windows",
+      "alt": "Visuel du jeu Jiangshi Tactics sur itch.io",
+      "result": "",
+      "link": "https://go-for-rune.itch.io/jiangshi-tactics",
+      "linkLabel": "Page et crédits sur itch.io",
+      "id": "jiangshi-tactics",
+      "title": "Jiangshi Tactics",
+      "page": "https://go-for-rune.itch.io/jiangshi-tactics",
+      "intro": "Un jeu tactique au tour par tour : un moine pacifiste doit se défendre en déplaçant ses ennemis pour qu’ils s’attaquent entre eux.",
+      "context": "Premier prototype du collectif Go For Rune. Version Windows.",
+      "role": "Game design et programmation en équipe ; crédité sous le nom « Adrien L ».",
+      "approach": "Combattre sans attaquer directement : se défendre et modifier la position des ennemis sur le terrain.",
+      "credits": "Game design : Adrien L, Timéo D, Félix W et Nino B. Programmation : Adrien L et Timéo D. Level design et scénario : Félix W. Art : Nino B.",
+      "embed": {
+        "type": "download",
+        "game": 3632871
+      },
+      "controls": "Version Windows à télécharger. Ce projet ne possède pas de version navigateur sur sa page itch.io.",
+      "image": "assets/games/jiangshi-tactics.png",
+      "gallery": []
+    }
   ]
 };
