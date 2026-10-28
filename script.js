@@ -76,7 +76,7 @@
     });
     if (!filled) { detailBody.append(el('p', 'muted', 'Fiche à compléter : contexte, objectif, rôle personnel, démarche, outils et livrables.')); incomplete = true; }
     if (project.credits && !project.role) detailBody.append(el('p', 'muted', 'Hakhan_laf figure parmi les auteurs. Le détail de ma contribution sera ajouté à cette fiche.'));
-    (project.gallery || []).forEach(shot => {
+    (project.presentation ? [] : project.gallery || []).forEach(shot => {
       const src = safeUrl(shot.image);
       if (!src) return;
       const figure = el('figure', 'game-capture');
@@ -85,13 +85,14 @@
     });
     const url = safeUrl(project.link);
     if (url) { const link = el('a', '', `${project.linkLabel || 'Voir le projet'} ↗`); link.href = url; detailBody.append(link); }
+    details.append(summary, detailBody); copy.append(details);
     if (project.presentation) {
       const presentation = el('a', 'project-page-link', 'Voir le projet ↗');
       presentation.href = safeUrl(project.presentation);
       const imageLink = el('a'); imageLink.href = presentation.href; imageLink.setAttribute('aria-label', 'Voir le projet ' + project.title);
       imageLink.append(visual);
       copy.append(presentation);
-    } else { details.append(summary, detailBody); copy.append(details); }
+    }
     card.append(visual.parentElement?.tagName === 'A' ? visual.parentElement : visual, copy); grid.append(card);
 
   });
