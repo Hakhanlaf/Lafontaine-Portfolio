@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio junior en communication et graphisme : édition, créations graphiques, audiovisuel et jeux vidéo. Candidatures au Luxembourg et en Lorraine.">
+  <title>Portfolio — Communication & graphisme</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+  <header class="header wrap">
+    <a class="brand" href="#accueil" aria-label="Portfolio, accueil"><span class="brand-bars" aria-hidden="true"></span><span data-name>Portfolio</span></a>
+    <nav aria-label="Navigation principale"><a href="#projets">Projets</a><a href="#apropos">À propos</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="accueil">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="dot"></span> Communication & graphisme · Profil junior</div>
+      <h1 id="hero-title">Des idées.<br>Des images.<br><span class="outlined">Du lien.</span></h1>
+      <div class="hero-bottom"><p>Un portfolio à la croisée de la communication, du graphisme, de l’audiovisuel et du jeu vidéo.</p><a class="button" href="#projets">Explorer les projets <span aria-hidden="true">↘</span></a></div>
+      <div class="hero-bars" aria-hidden="true"><span></span><span></span></div>
+      <div class="hero-foot"><span>Candidatures junior</span><span>Luxembourg & Lorraine</span></div>
+    </section>
+    <section class="projects wrap" id="projets" aria-labelledby="projects-title">
+      <div class="section-top"><div><p class="eyebrow">01 / Portfolio</p><h2 id="projects-title">Projets & explorations<span class="orange">.</span></h2></div><p class="section-note">Quatre domaines, un espace pour présenter chaque démarche.</p></div>
+      <p class="draft-note" id="draft-note">Version à compléter — les visuels et les descriptions détaillées des projets ne sont pas encore intégrés.</p>
+      <div class="filters" role="group" aria-label="Filtrer les projets"><button type="button" data-filter="all" aria-pressed="true">Tout voir</button><button type="button" data-filter="edition" aria-pressed="false">Édition</button><button type="button" data-filter="graphisme" aria-pressed="false">Graphisme</button><button type="button" data-filter="video" aria-pressed="false">Audiovisuel</button><button type="button" data-filter="jeu" aria-pressed="false">Jeux vidéo</button></div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div class="project-grid" id="project-grid"></div>
+      <noscript><p>Activez JavaScript pour afficher les fiches des quatre rubriques : livret d’accueil, créations graphiques, réalisations audiovisuelles et jeux vidéo.</p></noscript>
+    </section>
+    <section class="about" id="apropos" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">02 / À propos</p><h2 id="about-title">Communication.<br>Création.<br><em>Connexion.</em></h2><div class="small-bars" aria-hidden="true"></div></div><div class="about-copy"><p class="lead">Un parcours en communication, des projets à raconter.</p><p id="about-text">Mon parcours en communication s’accompagne de créations graphiques, d’un livret d’accueil et de projets de jeux vidéo. Ce portfolio rassemble aussi un espace dédié à mes réalisations audiovisuelles.</p><p class="muted" id="about-placeholder">Présentation à compléter avec votre formation exacte, vos expériences, votre rôle dans les projets et vos outils réellement pratiqués.</p><div class="focus-list"><span>Communication</span><span>Création graphique</span><span>Audiovisuel</span><span>Jeux vidéo</span></div><a id="cv-link" class="text-link" hidden>Télécharger mon CV <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">03 / Contact</p><h2 id="contact-title">Et si on<br><em>échangeait ?</em><span class="orange">↗</span></h2><div class="contact-bottom"><p>Pour une opportunité junior en communication ou en graphisme au Luxembourg ou en Lorraine.</p><div id="contact-links"><p class="muted">Coordonnées à ajouter avant publication.</p></div></div></section>
+  </main>
+  <footer class="footer wrap"><span data-name>Portfolio</span><span>Communication & graphisme</span><a href="#accueil">Retour en haut ↑</a></footer>
+</body>
+</html>
